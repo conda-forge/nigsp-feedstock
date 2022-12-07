@@ -1,5 +1,5 @@
 {% set name = "nigsp" %}
-{% set version = "0.12.1" %}
+{% set version = "0.13.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/nigsp-{{ version }}.tar.gz
-  sha256: 9528880373748f0988dd0a4490f1d63db33d9a1af8717ea54efc5e5efa77b624
+  sha256: 411c5298b6ded22bd0fa297420ac26d31a88692c8f7699995d276622acde003f
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 1
+  number: 0
   entry_points:
     - nigsp = nigsp.workflow:_main
 
