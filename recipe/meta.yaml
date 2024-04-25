@@ -1,5 +1,5 @@
 {% set name = "nigsp" %}
-{% set version = "0.18.1" %}
+{% set version = "0.19.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/nigsp-{{ version }}.tar.gz
-  sha256: bc0cabe8f13f8cb20bb460d811fc66fdbd436c35a54d11a4ba886f3f56015144
+  sha256: 320b303c1bf1c9873278b7a8f93b433c84ff14da0fb3425f6aa4732ab63f4e6b
 
 build:
   noarch: python
